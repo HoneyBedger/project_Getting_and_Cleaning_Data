@@ -25,5 +25,5 @@ removed from the feature names as they may cause problems with R code.
 6. Group the resulting dataset "data" by Sybject and Activity, then calculate
 the mean values of each feature for these groups. The outcome is a dataframe
 "data_means" with 180 rows and 68 columns (66 variables).  
-7. View the dataframes "data" and "data_means".  
+7. View the dataframe "data_means".  
 

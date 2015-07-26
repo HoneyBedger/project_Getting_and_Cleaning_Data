@@ -25,9 +25,7 @@ column containing activity names ("Activity").
 grouped by Subject and Activity. Function `summarize` was applied inside a
 `do.call` construct to summarize values of each feature into mean values
 for the groups. The result is a new dataframe "data_means".  
-* The dataframes "data" (10299 by 68, i.e. 10299 observations of 66 variables)
-and "data_means" (180 by 68, i.e. 180 observations of 66 variables) are
-displayed with `View` function.  
+* The dataframe "data_means" (180 by 68, i.e. 180 observations of 66 variables) is displayed with `View` function.  
   
 ***
   

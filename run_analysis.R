@@ -73,7 +73,6 @@ data_means <- as.data.frame(
       do.call(summarise, c(list(.data = data_grouped), summarize_by)))
 
 
-## View the results
-View(data)
+## View the result
 View(data_means)
 
