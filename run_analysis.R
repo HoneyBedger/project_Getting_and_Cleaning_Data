@@ -17,10 +17,8 @@ features <- read.table("./UCI HAR Dataset/features.txt", header = F,
                        colClasses = c("integer", "character"),
                        col.names = c("No.", "Name"))
 ## Rename the variables (remove "()" and "-")
-features$Name <- sub("\\-", ".", features$Name)
-features$Name <- sub("\\()", "", features$Name)
-features$Name <- sub("\\-", ".", features$Name)  ## not a typo: does not replace
-                                                 ## all "-"s from the first run
+features$Name <- gsub("\\-", ".", features$Name)
+features$Name <- gsub("\\()", "", features$Name)
 
 train_data <- cbind(as.integer(readLines
                           ("./UCI HAR Dataset/train/subject_train.txt")),
