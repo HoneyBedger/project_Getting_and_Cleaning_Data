@@ -4,8 +4,7 @@ if(!file.exists("./UCI HAR Dataset") &
    !file.exists("./getdata-projectfiles-UCI HAR Dataset.zip")){
       fileUrl <- "http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
       download.file(fileUrl,
-                    destfile = "getdata-projectfiles-UCI HAR Dataset.zip",
-                    method = "wininet")
+                    destfile = "getdata-projectfiles-UCI HAR Dataset.zip")
 }
 
 ## Unpack the archive if it's not unpacked already 
